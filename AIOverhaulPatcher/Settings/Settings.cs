@@ -8,8 +8,8 @@ namespace AIOverhaulPatcher.Settings
 {
     class Settings
     {
-        public bool IgnoreIdenticalToLastOverride { get; set; } = false;
-        public bool IgnorePlayerRecord { get; set; } = true;
-        public bool MaintainHighestProtectionLevel { get; set; } = true;
+        public bool IgnorerIdentiqueAuDernierRemplacement { get; set; } = false;
+        public bool IgnorerEnregistrementJoueur { get; set; } = true;
+        public bool MaintenirLePlusHautNiveauDeProtection { get; set; } = true;
     }
 }
