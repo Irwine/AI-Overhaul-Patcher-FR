@@ -24,5 +24,5 @@ Un patcher synthesis pour AI Overhaul SE https://www.nexusmods.com/skyrimspecial
 	
 		Lorsqu'activée, les PNJS définis comme essentiels ou protégés par d'autres mods conserveront le niveau de protection le plus élevé.
 		
-### Versions à utiliser :
+## Versions à utiliser :
 0.30.3 et 0.19.1
