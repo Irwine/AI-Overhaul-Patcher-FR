@@ -68,7 +68,7 @@ namespace AIOverhaulPatcher
             System.Console.WriteLine(processed + "/" + total + " Npcs");
             foreach (var npc in AIOverhaul.Npcs)
             {
-                if (_settings.Value.IgnorerEnregistrementJoueur &&  new List<uint>() { 7, 14 }.Contains(npc.FormKey.ID)) continue;
+                if (_settings.Value.IgnorePlayerRecord &&  new List<uint>() { 7, 14 }.Contains(npc.FormKey.ID)) continue;
 
                 if (b >= bmax)
                 {
@@ -87,7 +87,7 @@ namespace AIOverhaulPatcher
                 bool change = false;
 
                 var patchNpc = state.PatchMod.Npcs.GetOrAddAsOverride(winningOverride);
-                if (npc.IsProtected() && !(patchNpc.IsProtected() || (patchNpc.IsEssential() && _settings.Value.MaintenirLePlusHautNiveauDeProtection)))
+                if (npc.IsProtected() && !(patchNpc.IsProtected() || (patchNpc.IsEssential() && _settings.Value.MaintainHighestProtectionLevel)))
                 {
                     patchNpc.Configuration.Flags.SetFlag(NpcConfiguration.Flag.Protected, true);
                     change = true;
@@ -199,7 +199,7 @@ namespace AIOverhaulPatcher
                 }
 
 
-                if (_settings.Value.IgnorerIdentiqueAuDernierRemplacement && !change)
+                if (_settings.Value.IgnoreIdenticalToLastOverride && !change)
                 {
                     state.PatchMod.Npcs.Remove(npc);
                 }
