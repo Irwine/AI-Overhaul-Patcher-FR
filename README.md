@@ -8,17 +8,17 @@ Un patcher synthesis pour AI Overhaul SE https://www.nexusmods.com/skyrimspecial
 - Utilise les dernières tenues chargées qui n'ont pas été écrasées ou supprimées par AIO ou USEEP.
 
 ## Paramètres :
-- Ignorer Identique Au Dernier Remplacement
+- Ignorer pnj identique au dernier override
 
 		Default = false
 	
 		Lorsqu'activée, le patcher ne remplacera pas les PNJ qui sont déjà patchés.
-- Ignorer Enregistrement Joueur
+- Ignorer l'enregistrement joueur
 
 		Default = true
 
 		Lorsqu'activée, le patcher ignorera l'enregistrement joueur (00000007).
-- Maintenir Le Plus Haut Niveau De Protection
+- Maintenir le plus haut niveau de protection
 
 		Default = true
 	
